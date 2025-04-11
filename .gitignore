@@ -1,0 +1,36 @@
+# === PlatformIO build files ===
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# === VSCode workspace settings ===
+.vscode/
+
+# === MacOS ===
+.DS_Store
+
+# === Linux ===
+*~
+
+# === Windows ===
+Thumbs.db
+desktop.ini
+
+# === Backup/Swap files ===
+*.bak
+*.swp
+*.swo
+
+# === Arduino IDE ===
+*.elf
+*.hex
+
+# === Logs ===
+*.log
+
+# === PlatformIO core files (if any) ===
+.platformio/
+
+# === Python cache ===
+__pycache__/
+*.pyc
