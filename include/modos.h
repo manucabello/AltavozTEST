@@ -2,7 +2,7 @@
 #define MODOS_H
 
 // Pin del pulsador
-const int pulsaModo = 13;
+const int pulsaModo = 14;
 
 // Evitar problemas al dejar pulsado el botón
 unsigned long tiempoUltimaPulsacionModo = 0;  // Variable para el control de tiempo del pulsador pulsaModo
@@ -10,8 +10,8 @@ unsigned long debounceDelayModo = 200;        // Tiempo de debounce (200ms) del 
 bool pulsadoModo = false;
 
 // Definir los pines de los LEDs para los modos
-const int ledVerde = 8;
-const int ledAzul = 9;
+const int ledVerde = 16;
+const int ledAzul = 17;
 const int ledRojo = 4;
 
 // Simulación de modos de reproducción
@@ -108,8 +108,11 @@ void cambiarModo() {
   actualizarLEDs();
   
   if (modoActual == RFID) {
+    Serial.println("Modo: RFID");
     beep();
+    listarArchivos();
   } else {
+    Serial.println("Modo: BLUETOOTH");
     beepMultiple(2);
   }
 }

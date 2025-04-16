@@ -5,9 +5,9 @@ enum EstadoReproduccion { STOPPED, PLAYING, PAUSED };
 EstadoReproduccion estadoReproduccion = STOPPED;
 
 // Pin de los pulsadores
-const int prev = 5;
-const int play = 6;
-const int next = 7;
+const int prev = 32;
+const int play = 33;
+const int next = 35;
 
 // Evitar problemas al dejar pulsado el botón
 unsigned long tiempoUltimaPulsacionPrev = 0;       // Variable para el control de tiempo del pulsador prev

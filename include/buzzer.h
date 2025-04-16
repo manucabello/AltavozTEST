@@ -2,7 +2,7 @@
 #define BUZZER_H
 
 // Pin del buzzer
-const int buzzer = 10;
+const int buzzer = 13;
 
 void inicializarBuzzer() {
     pinMode(buzzer, OUTPUT);

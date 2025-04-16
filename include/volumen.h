@@ -4,8 +4,8 @@
 int volumen = 50;  // Volumen inicial (de 0 a 100)
 
 // Pines de pulsadores
-const int volDown = 11;
-const int volUp = 12;
+const int volDown = 34;
+const int volUp = 27;
 
 // Evitar problemas al dejar pulsado el botón
 unsigned long tiempoUltimaPulsacionVolDown = 0;     // Variable para el control de tiempo del pulsador volDown
